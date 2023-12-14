@@ -1,49 +1,51 @@
-<html>
+<!doctype html>
+<html lang="en">
     <head>
      <title> calculter</title>
-        <meta charset="utf-8"/>
+        <meta charset="utf-8">
         <link rel="stylesheet" href="CAL.CSS">
-        <link href="CAL.js" >
+        <script src="C:\Users\yoga\OneDrive\Desktop\calculater\CAL.JS" ></script>
      </head>
 
 <body>
+
     <div class="container">
 <input type="text" id="input" disabled>
         <div class="first_row" >
           
-    <button onclick=""  class="black"> ( </button>
-    <button onclick="" class="black"> ) </button>
-    <button onclick="" class="black"> % </button>
-    <button onclick="" class="black"> CE </button>
+    <button onclick=" openPar()"  class="black" value="("> ( </button>
+    <button onclick="closePar()" class="black" value=")"> ) </button>
+    <button onclick="add_No('%')" class="black" value="%"> % </button>
+    <button onclick="clear_No()" class="black" value="CE"> CE </button>
     
         </div>
     
       <div class="second-row">
-    <button onclick=""> 7 </button>
-    <button onclick=""> 8 </button>
-    <button onclick=""> 9</button>
-    <button onclick="" class="black" > \ </button>
+    <button onclick=" add_No('7') " value="7"> 7 </button>
+    <button onclick=" add_No('8')" value="8"> 8 </button>
+    <button onclick="  add_No('9')" value="9"> 9</button>
+    <button onclick="add_No('/') " class="black" value="/" > / </button>
       </div>
    
     <div class="third-row">
-    <button onclick=""> 4 </button>
-    <button onclick=""> 5</button>
-    <button onclick=""> 6</button>
-    <button onclick="" class="black"> *</button>
+    <button onclick=" add_No('4') " value="4"> 4 </button>
+    <button onclick="add_No('5')" value="5"> 5</button>
+    <button onclick="add_No('6')" value="6"> 6</button>
+    <button onclick=" add_No('*')" class="black" value="*"> *</button>
     </div>
    
     <div class="forth-row">
-    <button onclick=""> 1 </button>
-    <button onclick=""> 2 </button>
-    <button onclick=""> 3 </button>
-    <button onclick="" class="black"> - </button>
+    <button onclick="add_No('1')" value="1"> 1 </button>
+    <button onclick="add_No('2')" value="2"> 2 </button>
+    <button onclick="add_No('3')" value="3"> 3 </button>
+    <button onclick="add_No('-')" class="black" value="-"> - </button>
     </div>
     
     <div class="fifth-row">
-    <button onclick=""> 0 </button>
-    <button onclick=""> . </button>
-    <button onclick=" " class="equal-button"> = </button>
-    <button onclick="" class="black" > + </button>
+    <button onclick=" add_No('0')" value="0"> 0 </button>
+    <button onclick="  Decimal()" value="."> . </button>
+    <button onclick="show_result() " class="equal-button" value="="> = </button>
+    <button onclick=" add_No('+')" class="black" value="+"> + </button>
         </div>
  </div>
 
